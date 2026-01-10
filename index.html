@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8">
+        <title>VTR Esports | Campeonatos VALORANT</title>
+        <link rel="stylesheet" href="estilos/style.css">
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;800&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <header>
+            <h1>VTR ESPORTS</h1>
+            <nav>
+                <a href="#sobre">Sobre</a>
+                <a href="#campeonatos">Campeonatos</a>
+                <a href="#regras">Regras</a>
+                <a href="#inscricao">Inscrição</a>
+            </nav>
+        </header>
+
+        <section class="hero">
+            <div class="hero-content">
+                <h2>Entre no <span>campo de batalha</span> competitivo</h2>
+                <p>Participe dos maiores campeonatos amadores de VALORANT do Brasil. Dispute prêmios, ranking e reconhecimento.</p>
+                <button class="btn">Inscreva seu time</button>
+            </div>
+        </section>
+
+        <section id="sobre">
+            <h3>Sobre a VTR Esports</h3>
+            <p>
+                A VTR Esports organiza campeonatos competitivos de VALORANT com foco em times amadores
+                que buscam crescimento, visibilidade e experiência no cenário competitivo.
+            </p>
+        </section>
+
+        <section id="campeonatos">
+            <h3>Campeonatos Ativos</h3>
+
+            <div class="cards">
+                <div class="card">
+                    <h4>VTR Open Cup</h4>
+                    <p>Campeonato semanal para times iniciantes com partidas MD1 e finais MD3.</p>
+                    <a href="detalhes/opencut.html">
+                        <button class="btn">Ver detalhes</button>
+                    </a>
+                </div>
+
+                <div class="card">
+                    <h4>VTR Challenger</h4>
+                    <p>Competição mensal com premiação em dinheiro e transmissão ao vivo.</p>
+                    <a href="detalhes/challenger.html">
+                        <button class="btn">Ver detalhes</button>
+                    </a>
+                </div>
+
+                <div class="card">
+                    <h4>VTR Academy</h4>
+                    <p>Ideal para novos times aprenderem o competitivo com regras simplificadas.</p>
+                    <a href="detalhes/academy.html">
+                        <button class="btn">Ver detalhes</button>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <section id="regras" class="rules">
+            <h3>Regras Gerais</h3>
+            <ul>
+                <li>Times devem conter 5 jogadores titulares.</li>
+                <li>Uso de cheats resulta em banimento permanente.</li>
+                <li>Partidas seguem o formato padrão competitivo da Riot.</li>
+                <li>Respeito entre jogadores é obrigatório.</li>
+            </ul>
+        </section>
+
+        <section id="inscricao">
+            <h3>Inscrição</h3>
+
+            <form>
+                <input type="text" placeholder="Nome do Time" required>
+                <input type="text" placeholder="Capitão do Time" required>
+                <input type="email" placeholder="Email de Contato" required>
+                <input type="text" placeholder="Discord" required>
+                <button class="btn" type="submit">Enviar Inscrição</button>
+            </form>
+        </section>
+
+        <footer>
+            <p>© 2026 <span>VTR Esports</span> • Todos os direitos reservados</p>
+        </footer>
+
+        <script>
+            document.querySelector("form").addEventListener("submit", function(e) {
+                e.preventDefault();
+                alert("Inscrição enviada com sucesso!");
+            });
+        </script>
+    </body>
+</html>

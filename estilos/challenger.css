@@ -1,0 +1,172 @@
+@charset "UTF-8";
+
+        :root {
+            --red: #ff4655;
+            --dark: #0f1923;
+            --gray: #1c252e;
+            --white: #ffffff;
+            --gold: #f5c77a;
+            --soft: #9fb3c8;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Montserrat', sans-serif;
+        }
+
+        body {
+            background-color: var(--dark);
+            color: var(--white);
+        }
+
+        header {
+            background: var(--gray);
+            padding: 20px 60px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        header h1 {
+            color: var(--red);
+            font-weight: 800;
+        }
+
+        nav a {
+            color: var(--white);
+            margin-left: 30px;
+            text-decoration: none;
+            font-weight: 600;
+        }
+
+        nav a:hover {
+            color: var(--red);
+        }
+
+        /* BANNER */
+        .banner {
+            padding: 100px 60px;
+            background: linear-gradient(rgba(15,25,35,0.85), rgba(15,25,35,0.95)),
+            url("https://images.alphacoders.com/121/1212924.jpg") center/cover;
+        }
+
+        .banner h2 {
+            font-size: 3.2rem;
+            margin-bottom: 20px;
+        }
+
+        .banner span {
+            color: var(--gold);
+        }
+
+        .banner p {
+            max-width: 650px;
+            line-height: 1.7;
+            color: var(--soft);
+        }
+
+        section {
+            padding: 70px 60px;
+        }
+
+        section h3 {
+            font-size: 2rem;
+            margin-bottom: 30px;
+            border-left: 6px solid var(--gold);
+            padding-left: 15px;
+        }
+
+        .info-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+            gap: 30px;
+        }
+
+        .info-box {
+            background: var(--gray);
+            padding: 35px;
+            border-radius: 12px;
+            border: 1px solid rgba(245,199,122,0.15);
+        }
+
+        .info-box h4 {
+            color: var(--gold);
+            margin-bottom: 12px;
+        }
+
+        .info-box p {
+            line-height: 1.6;
+            color: var(--soft);
+        }
+
+        .prize {
+            background: linear-gradient(135deg, rgba(245,199,122,0.15), rgba(255,70,85,0.1));
+            border-radius: 12px;
+            padding: 40px;
+            margin-top: 50px;
+            text-align: center;
+        }
+
+        .prize h4 {
+            font-size: 1.8rem;
+            color: var(--gold);
+            margin-bottom: 15px;
+        }
+
+        .prize span {
+            font-size: 2.5rem;
+            font-weight: 800;
+            color: var(--white);
+        }
+
+        .rules ul {
+            list-style: none;
+        }
+
+        .rules li {
+            margin-bottom: 15px;
+            padding-left: 20px;
+            position: relative;
+            color: var(--soft);
+        }
+
+        .rules li::before {
+            content: "▸";
+            position: absolute;
+            left: 0;
+            color: var(--gold);
+        }
+
+        .btn {
+            padding: 18px 40px;
+            background: linear-gradient(135deg, var(--gold), var(--red));
+            color: var(--dark);
+            border: none;
+            cursor: pointer;
+            font-weight: 800;
+            margin-top: 30px;
+            border-radius: 8px;
+        }
+
+        .btn:hover {
+            opacity: 0.9;
+        }
+
+        footer {
+            background: #080f14;
+            padding: 30px;
+            text-align: center;
+            font-size: 0.9rem;
+        }
+
+        footer span {
+            color: var(--gold);
+        }
+
+        @media (max-width: 768px) {
+            .banner h2 {
+                font-size: 2.3rem;
+            }
+        }
