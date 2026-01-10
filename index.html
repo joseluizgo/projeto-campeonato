@@ -76,11 +76,12 @@
         <section id="inscricao">
             <h3>Inscrição</h3>
 
-            <form>
-                <input type="text" placeholder="Nome do Time" required>
-                <input type="text" placeholder="Capitão do Time" required>
-                <input type="email" placeholder="Email de Contato" required>
-                <input type="text" placeholder="Discord" required>
+            <form action="https://formsubmit.co/joseluizgo69@gmail.com" method="POST">
+                <input type="text" name="team_name" placeholder="Nome do Time" required>
+                <input type="text" name="captain" placeholder="Capitão do Time" required>
+                <input type="email" name="email" placeholder="Email de Contato" required>
+                <input type="text" name="discord" placeholder="Discord" required>
+
                 <button class="btn" type="submit">Enviar Inscrição</button>
             </form>
         </section>
@@ -88,12 +89,5 @@
         <footer>
             <p>© 2026 <span>VTR Esports</span> • Todos os direitos reservados</p>
         </footer>
-
-        <script>
-            document.querySelector("form").addEventListener("submit", function(e) {
-                e.preventDefault();
-                alert("Inscrição enviada com sucesso!");
-            });
-        </script>
     </body>
 </html>
